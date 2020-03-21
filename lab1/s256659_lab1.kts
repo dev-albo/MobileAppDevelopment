@@ -27,7 +27,7 @@ fun randomDay(): String {
 
 fun randomDayVersion1(): String {
     // < than number of days
-    var randomDay = Random.Default.nextInt(numberOfDays -1)
+    var randomDay = Random.Default.nextInt(until: numberOfDays)
     return week[randomDay]
 }
 
